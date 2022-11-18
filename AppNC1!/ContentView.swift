@@ -8,14 +8,68 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var date = Date()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        DatePicker(
+            "Start Date",
+            selection: $date,
+            displayedComponents: [.date]
+        )
+        .datePickerStyle(.graphical)
+    }
+        
+}
+
+struct MultiDatePickerStart: View {
+    @Environment(\.calendar) var calendar
+    @Environment(\.timeZone) var timeZone
+    
+    var bounds: PartialRangeFrom<Date> {
+        let start = calendar.date(
+            from: DateComponents(
+                timeZone: timeZone,
+                year: 2022,
+                month: 6,
+                day: 20)
+        )!
+        
+        return start...
+        
+    }
+    
+    @State private var dates: Set<DateComponents> = []
+    
+    var body: some View {
+        MultiDatePicker("Dates Available", selection: $dates, in: bounds)
+        
+            .fixedSize()
+    }
+}
+
+struct MultiDatePickerEnd: View {
+    @Environment(\.calendar) var calendar
+    @Environment(\.timeZone) var timeZone
+    
+    var bounds: PartialRangeUpTo<Date> {
+        let end = calendar.date(
+            from: DateComponents(
+                timeZone: timeZone,
+                year: 2022,
+                month: 6,
+                day: 20)
+        )!
+        
+        return ..<end
+        
+    }
+    
+    @State private var dates: Set<DateComponents> = []
+    
+    var body: some View {
+        MultiDatePicker("Dates Available", selection: $dates, in: bounds)
+        
+            .fixedSize()
     }
 }
 
