@@ -19,7 +19,7 @@ struct TabBar: View {
             TodayView()
                 .tabItem {
                     Label("Today", systemImage: "clock")
-                        
+                    
                 }
         }
     }

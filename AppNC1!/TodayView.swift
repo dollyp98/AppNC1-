@@ -8,25 +8,39 @@
 import SwiftUI
 
 struct TodayView: View {
-    @State var progress: Double = 0
+    @State var progress: Double = 0.6
     
     var body: some View {
         VStack {
             ZStack {
-                    Spacer()
-                    CirclularProgressView (progress: progress)
-                    RoundedRectangle(cornerRadius: 20)
-                        .frame(width: 350, height: 170)
-                    Text ("Your today’s plan is almost done!")
-                        .font(.body)
-                        .foregroundColor(.black)
-                        .bold()
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 350, height: 200)
+                    .foregroundColor(.teal)
+                    .shadow(radius: 22)
+                Text ("Your today’s plan is almost done!")
+                    .font(.body)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.black)
+                    .multilineTextAlignment(.center)
+                    .padding(.leading, -130.0)
+                    .frame(width: 123.0, height: 100.0)
                     
+                
+                
+                Spacer()
+                
+                HStack {
+                    ZStack {
+                        CirclularProgressView (progress: progress)
+                        
+                    }
+                    .padding(.leading, 170.0)
                 }
-                .foregroundColor(.mint)
             }
         }
     }
+}
+
 
 struct TodayView_Previews: PreviewProvider {
     static var previews: some View {

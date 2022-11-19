@@ -16,6 +16,7 @@ struct ContentView: View {
             selection: $date,
             displayedComponents: [.date]
         )
+        
         .datePickerStyle(.graphical)
     }
         
