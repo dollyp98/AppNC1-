@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2B686B292A4CD500C113FC /* EventsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B686A292A4CD500C113FC /* EventsRow.swift */; };
 		1C47B092292798B100719230 /* AppNC1_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47B091292798B100719230 /* AppNC1_App.swift */; };
 		1C47B094292798B100719230 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47B093292798B100719230 /* ContentView.swift */; };
 		1C47B096292798B200719230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C47B095292798B200719230 /* Assets.xcassets */; };
@@ -17,10 +18,10 @@
 		1C47B0A62927A75500719230 /* CirclularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47B0A52927A75500719230 /* CirclularProgressView.swift */; };
 		1CE4BC5229292B2E009677C2 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4BC5129292B2E009677C2 /* TaskList.swift */; };
 		1CE4BC5429292D6A009677C2 /* CheckedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4BC5329292D6A009677C2 /* CheckedList.swift */; };
-		1CE4BC6229294A6C009677C2 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4BC6129294A6C009677C2 /* EventList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C2B686A292A4CD500C113FC /* EventsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRow.swift; sourceTree = "<group>"; };
 		1C47B08E292798B100719230 /* AppNC1!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppNC1!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C47B091292798B100719230 /* AppNC1_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNC1_App.swift; sourceTree = "<group>"; };
 		1C47B093292798B100719230 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		1C47B0A52927A75500719230 /* CirclularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclularProgressView.swift; sourceTree = "<group>"; };
 		1CE4BC5129292B2E009677C2 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		1CE4BC5329292D6A009677C2 /* CheckedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedList.swift; sourceTree = "<group>"; };
-		1CE4BC6129294A6C009677C2 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +68,12 @@
 			children = (
 				1C47B091292798B100719230 /* AppNC1_App.swift */,
 				1C47B093292798B100719230 /* ContentView.swift */,
+				1C47B0A52927A75500719230 /* CirclularProgressView.swift */,
+				1C2B686A292A4CD500C113FC /* EventsRow.swift */,
 				1CE4BC5129292B2E009677C2 /* TaskList.swift */,
 				1CE4BC5329292D6A009677C2 /* CheckedList.swift */,
-				1CE4BC6129294A6C009677C2 /* EventList.swift */,
 				1C47B0A12927A1F100719230 /* TabBar.swift */,
 				1C47B0A32927A30300719230 /* TodayView.swift */,
-				1C47B0A52927A75500719230 /* CirclularProgressView.swift */,
 				1C47B095292798B200719230 /* Assets.xcassets */,
 				1C47B097292798B200719230 /* Preview Content */,
 			);
@@ -159,7 +159,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CE4BC6229294A6C009677C2 /* EventList.swift in Sources */,
 				1CE4BC5229292B2E009677C2 /* TaskList.swift in Sources */,
 				1C47B0A22927A1F100719230 /* TabBar.swift in Sources */,
 				1C47B094292798B100719230 /* ContentView.swift in Sources */,
@@ -167,6 +166,7 @@
 				1CE4BC5429292D6A009677C2 /* CheckedList.swift in Sources */,
 				1C47B092292798B100719230 /* AppNC1_App.swift in Sources */,
 				1C47B0A62927A75500719230 /* CirclularProgressView.swift in Sources */,
+				1C2B686B292A4CD500C113FC /* EventsRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

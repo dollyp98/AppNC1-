@@ -16,12 +16,11 @@ struct ContentView: View {
             selection: $date,
             displayedComponents: [.date]
         )
-        
         .datePickerStyle(.graphical)
-        
     }
-        
 }
+
+
 
 struct MultiDatePickerStart: View {
     @Environment(\.calendar) var calendar
