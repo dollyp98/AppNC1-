@@ -15,7 +15,6 @@ struct TabBar: View {
                     Label("Calendar", systemImage: "calendar")
                 }
             
-            
             TodayView()
                 .tabItem {
                     Label("Today", systemImage: "clock")
