@@ -36,7 +36,7 @@ struct ListItems: View {
                 systemName: "person.3",
                 title: "Team Meeting")
             EventsRow(
-                systemName: "medical.thermometer",
+                systemName: "cross",
                 title: "Doctor Appointment")
             EventsRow(
                 systemName: "person.2", title: "Mom and Dad Anniversary")

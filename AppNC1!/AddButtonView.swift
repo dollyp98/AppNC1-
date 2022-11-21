@@ -9,7 +9,12 @@ import SwiftUI
 
 struct AddButtonView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Button(action: {}) {
+                Text ("Add")
+                    .font(.system(size: 20, weight: .heavy, design: .rounded))
+            }
+        }
     }
 }
 
