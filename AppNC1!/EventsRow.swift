@@ -14,35 +14,38 @@ struct EventsRow: View {
         NavigationView {
             List {
                 NavigationLink ("Sarah's birthday 🥳") {
-                    Text("Details")
+                    Text("Event Details")
                         .font(.headline)
                         .multilineTextAlignment(.leading)
-                        .padding(.bottom, 600.0)
                     Text("Buy a present at Sephora!")
+                        .padding(.top)
+                    Spacer()
                 }
+                .padding(.vertical)
+                
+                
                 NavigationLink ("Grocery shopping 🥬") {
-                    Text("Details")
+                    Text("Event Details")
                         .font(.headline)
                         .multilineTextAlignment(.leading)
-                        .padding(.bottom, 600.0)
                     Text("Buy milk, bread, carrots, lettuce, biscuits, deodorant, pasta, tomatoes, potatos, broccoli.")
+                        .padding(.top)
+                    Spacer()
                 }
+                .padding(.vertical)
+                
                 NavigationLink ("Team meeting 👩🏻‍💻") {
-                    Text ("Details")
+                    Text ("Event Details")
                         .font(.headline)
                         .multilineTextAlignment(.leading)
-                        .padding(.bottom, 600.0)
                     Text("Check and revise slides for new product presentation.")
+                        .padding(.top)
+                    Spacer()
                 }
-                //.onDelete(perform: deleteEvents)
-            }
-            .toolbar {
-                EditButton()
+                .padding(.vertical)
+                
             }
         }
-    }
-    func deleteEvents( at offsets: IndexSet) {
-        events.remove(atOffsets: offsets)
     }
 }
 

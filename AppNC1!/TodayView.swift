@@ -42,8 +42,7 @@ struct TodayView: View {
                 .multilineTextAlignment(.leading)
                 .padding(.trailing, 70.0)
                 .frame(height: 57.0)
-            
-            
+           
             CheckedList()
             
         }

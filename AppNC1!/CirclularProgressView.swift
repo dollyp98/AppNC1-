@@ -14,7 +14,7 @@ struct CirclularProgressView: View {
         ZStack {
             Circle()
                 .stroke( // 1
-                    Color.gray.opacity(0.8),
+                    Color.white.opacity(0.8),
                     lineWidth: 10
                 )
                 .frame(width: 100, height: 130)
