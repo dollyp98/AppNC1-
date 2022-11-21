@@ -18,7 +18,7 @@ struct ContentView: View {
                 displayedComponents: [.date]
             )
             .datePickerStyle(.graphical)
-            EventsRow()
+            ListItems()
         }
     }
 }

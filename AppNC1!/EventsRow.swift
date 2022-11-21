@@ -8,49 +8,44 @@
 import SwiftUI
 
 struct EventsRow: View {
-    @State private var events = ["Sarah's birthday🥳", "Grocery shopping 🥬", "Team meeting 👩🏻‍💻"]
+    let systemName: String
+    let title: String
+    
     
     var body: some View {
-        NavigationView {
-            List {
-                NavigationLink ("Sarah's birthday 🥳") {
-                    Text("Event Details")
-                        .font(.headline)
-                        .multilineTextAlignment(.leading)
-                    Text("Buy a present at Sephora!")
-                        .padding(.top)
-                    Spacer()
-                }
-                .padding(.vertical)
-                
-                
-                NavigationLink ("Grocery shopping 🥬") {
-                    Text("Event Details")
-                        .font(.headline)
-                        .multilineTextAlignment(.leading)
-                    Text("Buy milk, bread, carrots, lettuce, biscuits, deodorant, pasta, tomatoes, potatos, broccoli.")
-                        .padding(.top)
-                    Spacer()
-                }
-                .padding(.vertical)
-                
-                NavigationLink ("Team meeting 👩🏻‍💻") {
-                    Text ("Event Details")
-                        .font(.headline)
-                        .multilineTextAlignment(.leading)
-                    Text("Check and revise slides for new product presentation.")
-                        .padding(.top)
-                    Spacer()
-                }
-                .padding(.vertical)
-                
+        HStack {
+            Image(systemName: systemName)
+                .font(.headline)
+                .imageScale(.large)
+            VStack(alignment: .leading) {
+                Text(title)
+                    .font(.headline)
+                    .padding(.all)
             }
+        }
+    }
+}
+
+struct ListItems: View {
+    var body: some View {
+        List {
+            EventsRow(
+                systemName: "birthday.cake",
+                title: "Sarah's Birthday")
+            EventsRow(
+                systemName: "person.3",
+                title: "Team Meeting")
+            EventsRow(
+                systemName: "medical.thermometer",
+                title: "Doctor Appointment")
+            EventsRow(
+                systemName: "person.2", title: "Mom and Dad Anniversary")
         }
     }
 }
 
 struct EventsRow_Previews: PreviewProvider {
     static var previews: some View {
-        EventsRow()
+        ListItems()
     }
 }

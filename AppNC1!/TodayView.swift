@@ -32,6 +32,7 @@ struct TodayView: View {
                     ZStack {
                         CirclularProgressView (progress: progress)
                         
+                        
                     }
                     .padding(.leading, 170.0)
                 }
@@ -42,13 +43,12 @@ struct TodayView: View {
                 .multilineTextAlignment(.leading)
                 .padding(.trailing, 70.0)
                 .frame(height: 57.0)
-           
+            
             CheckedList()
             
         }
     }
 }
-
 
 
 struct TodayView_Previews: PreviewProvider {
