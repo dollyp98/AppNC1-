@@ -41,6 +41,8 @@ struct ListItems: View {
             EventsRow(
                 systemName: "person.2", title: "Mom and Dad Anniversary")
         }
+        
+        .listStyle(PlainListStyle())
     }
 }
 

@@ -11,6 +11,7 @@ struct TodayView: View {
     @State var progress: Double = 0.6
     
     var body: some View {
+        
         VStack {
             ZStack {
                 RoundedRectangle(cornerRadius: 20)

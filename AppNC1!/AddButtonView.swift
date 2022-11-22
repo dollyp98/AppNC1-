@@ -8,20 +8,19 @@
 import SwiftUI
 
 struct AddButtonView: View {
-    @State private var showModal = false
     
     var body: some View {
         ZStack {
-            Button(action: { showModal = true }) {
-                Image(systemName: "plus")
-                    .font(.system(size: 20, weight: .heavy, design: .rounded))
-            }
-            offset(y: -100)
+                    Button(action: {}) {
+                        Image(systemName: "plus")
+                            .padding(.bottom, 400.0)
+                            .font(.system(size: 25, weight: .regular, design: .rounded))
+                }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .statusBar(hidden: true)
+        .padding([.leading, .bottom], 300.0)
+        
+        }
     }
-}
 
 struct AddButtonView_Previews: PreviewProvider {
     static var previews: some View {

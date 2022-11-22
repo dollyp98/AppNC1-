@@ -20,7 +20,13 @@ struct ContentView: View {
             .datePickerStyle(.graphical)
             ListItems()
         }
+        .overlay(AddButtonView()
+            .padding(.trailing, 40)
+            .offset(x: 0, y: 70),
+             alignment: .topTrailing)
+        .ignoresSafeArea()
     }
+    
 }
 
 
