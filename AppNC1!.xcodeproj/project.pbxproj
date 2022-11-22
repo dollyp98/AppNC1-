@@ -10,6 +10,7 @@
 		1C2B686B292A4CD500C113FC /* EventsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B686A292A4CD500C113FC /* EventsRow.swift */; };
 		1C2B6870292A78B200C113FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2B686F292A78B200C113FC /* Assets.xcassets */; };
 		1C2B687B292C0CF000C113FC /* AddButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B687A292C0CF000C113FC /* AddButtonView.swift */; };
+		1C2B687D292CCED600C113FC /* showModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B687C292CCED600C113FC /* showModal.swift */; };
 		1C47B092292798B100719230 /* AppNC1_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47B091292798B100719230 /* AppNC1_App.swift */; };
 		1C47B094292798B100719230 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47B093292798B100719230 /* ContentView.swift */; };
 		1C47B099292798B200719230 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C47B098292798B200719230 /* Preview Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		1C2B686F292A78B200C113FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		1C2B6871292A78C400C113FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C2B687A292C0CF000C113FC /* AddButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonView.swift; sourceTree = "<group>"; };
+		1C2B687C292CCED600C113FC /* showModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showModal.swift; sourceTree = "<group>"; };
 		1C47B08E292798B100719230 /* AppNC1!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppNC1!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C47B091292798B100719230 /* AppNC1_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNC1_App.swift; sourceTree = "<group>"; };
 		1C47B093292798B100719230 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				1C47B0A32927A30300719230 /* TodayView.swift */,
 				1C47B0A52927A75500719230 /* CirclularProgressView.swift */,
 				1C2B687A292C0CF000C113FC /* AddButtonView.swift */,
+				1C2B687C292CCED600C113FC /* showModal.swift */,
 				1C47B0A12927A1F100719230 /* TabBar.swift */,
 				1CE4BC5129292B2E009677C2 /* TaskList.swift */,
 				1CE4BC5329292D6A009677C2 /* CheckedList.swift */,
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2B687D292CCED600C113FC /* showModal.swift in Sources */,
 				1CE4BC5229292B2E009677C2 /* TaskList.swift in Sources */,
 				1C47B0A22927A1F100719230 /* TabBar.swift in Sources */,
 				1C47B094292798B100719230 /* ContentView.swift in Sources */,

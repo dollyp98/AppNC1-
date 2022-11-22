@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct AddButtonView: View {
+    @State private var showModal = false
+    
     var body: some View {
         ZStack {
-            Button(action: {}) {
-                Text ("Add")
+            Button(action: { showModal = true }) {
+                Image(systemName: "plus")
                     .font(.system(size: 20, weight: .heavy, design: .rounded))
             }
+            offset(y: -100)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .statusBar(hidden: true)
     }
 }
 
