@@ -26,10 +26,7 @@ struct ContentView: View {
              alignment: .topTrailing)
         .ignoresSafeArea()
     }
-    
 }
-
-
 
 struct MultiDatePickerStart: View {
     @Environment(\.calendar) var calendar
