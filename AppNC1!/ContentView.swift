@@ -32,7 +32,11 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $searchIsPresented, content: {
-                Text("Add New Task").fontWeight(.bold)})
+                Text("Add New Task")
+                    .fontWeight(.bold)
+                    .padding(.vertical)
+                AddNewTask()
+            })
         }
     }
 }

@@ -18,6 +18,7 @@
 		1C4AF13D292D3DDF00665E79 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4AF13C292D3DDF00665E79 /* GameScene.swift */; };
 		1C4AF13F292D3E8200665E79 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4AF13E292D3E8200665E79 /* AnimationView.swift */; };
 		1C55204A292E35EF004D066C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2B6871292A78C400C113FC /* Assets.xcassets */; };
+		1CB07256292E825F00889507 /* AddNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB07255292E825F00889507 /* AddNewTask.swift */; };
 		1CE4BC5229292B2E009677C2 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4BC5129292B2E009677C2 /* TaskList.swift */; };
 		1CE4BC5429292D6A009677C2 /* CheckedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4BC5329292D6A009677C2 /* CheckedList.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		1C47B0A52927A75500719230 /* CirclularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclularProgressView.swift; sourceTree = "<group>"; };
 		1C4AF13C292D3DDF00665E79 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		1C4AF13E292D3E8200665E79 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		1CB07255292E825F00889507 /* AddNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTask.swift; sourceTree = "<group>"; };
 		1CE4BC5129292B2E009677C2 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		1CE4BC5329292D6A009677C2 /* CheckedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 				1C47B091292798B100719230 /* AppNC1_App.swift */,
 				1C47B093292798B100719230 /* ContentView.swift */,
 				1C47B0A32927A30300719230 /* TodayView.swift */,
+				1CB07255292E825F00889507 /* AddNewTask.swift */,
 				1C47B0A52927A75500719230 /* CirclularProgressView.swift */,
 				1C47B0A12927A1F100719230 /* TabBar.swift */,
 				1CE4BC5129292B2E009677C2 /* TaskList.swift */,
@@ -185,6 +188,7 @@
 				1C47B0A62927A75500719230 /* CirclularProgressView.swift in Sources */,
 				1C4AF13F292D3E8200665E79 /* AnimationView.swift in Sources */,
 				1C2B686B292A4CD500C113FC /* EventsRow.swift in Sources */,
+				1CB07256292E825F00889507 /* AddNewTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
