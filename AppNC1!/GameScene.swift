@@ -25,12 +25,15 @@ class GameScene: SKScene {
                playerAtlas.textureNamed("idle_1"),
                playerAtlas.textureNamed("idle_2"),
                playerAtlas.textureNamed("idle_3"),
-               playerAtlas.textureNamed("idle_4")
+               playerAtlas.textureNamed("idle_4"),
+               playerAtlas.textureNamed("idle_5"),
+               playerAtlas.textureNamed("idle_6"),
+               playerAtlas.textureNamed("idle_7")
            ]
        }
        
        private func setupPlayer() {
-           player = SKSpriteNode(texture: playerTexture, size: CGSize(width: 70, height: 46))
+           player = SKSpriteNode(texture: playerTexture, size: CGSize(width: 80, height: 50))
            player.position = CGPoint(x: frame.width/2, y: frame.height/2)
            
            addChild(player)
@@ -43,7 +46,7 @@ class GameScene: SKScene {
        }
        
        func startIdleAnimation() {
-           let IdleAnimation = SKAction.animate(with: playerIdleTextures, timePerFrame: 0.05)
+           let IdleAnimation = SKAction.animate(with: playerIdleTextures, timePerFrame: 0.09)
            
            player.run(SKAction.repeat(IdleAnimation, count: 1), withKey: "playerIdleAnimation")
        }

@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-@State private var date = Date()
+    @State var searchIsPresented: Bool = false
+    @State private var date = Date()
     
     var body: some View {
-        ZStack {
+        NavigationStack {
             VStack {
                 DatePicker(
                     "Start Date",
@@ -21,12 +22,18 @@ struct ContentView: View {
                 .datePickerStyle(.graphical)
                 ListItems()
             }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        searchIsPresented.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+            .sheet(isPresented: $searchIsPresented, content: {
+                Text("Add New Task").fontWeight(.bold)})
         }
-        .overlay(AddButtonView()
-            .padding(.trailing, 40)
-            .offset(x: 0, y: 70),
-                 alignment: .topTrailing)
-        .ignoresSafeArea()
     }
 }
 

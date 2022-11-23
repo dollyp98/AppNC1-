@@ -9,17 +9,17 @@ import SwiftUI
 
 struct TabBar: View {
     var body: some View {
-        TabView {
-            ContentView()
-                .tabItem {
-                    Label("Calendar", systemImage: "calendar")
-                }
-            
-            TodayView()
-                .tabItem {
-                    Label("Today", systemImage: "clock")
-                    
-                }
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Label("Calendar", systemImage: "calendar")
+                    }
+                
+                TodayView()
+                    .tabItem {
+                        Label("Today", systemImage: "clock")
+                        
+                    }
         }
     }
 }

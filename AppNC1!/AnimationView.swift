@@ -18,7 +18,7 @@ struct AnimationView: View {
     
     var body: some View {
         SpriteView(scene: self.scene)
-            .frame(width: 600, height: 900)
+            .frame(width: 1000, height: 900)
             .ignoresSafeArea()
     }
 }
