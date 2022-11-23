@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TodayView: View {
+    
     @State var progress: Double = 0.6
     
     var body: some View {
@@ -46,7 +47,6 @@ struct TodayView: View {
                 .frame(height: 57.0)
             
             CheckedList()
-            
         }
     }
 }

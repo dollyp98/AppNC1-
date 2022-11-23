@@ -8,22 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var date = Date()
+@State private var date = Date()
     
     var body: some View {
-        VStack {
-            DatePicker(
-                "Start Date",
-                selection: $date,
-                displayedComponents: [.date]
-            )
-            .datePickerStyle(.graphical)
-            ListItems()
+        ZStack {
+            VStack {
+                DatePicker(
+                    "Start Date",
+                    selection: $date,
+                    displayedComponents: [.date]
+                )
+                .datePickerStyle(.graphical)
+                ListItems()
+            }
         }
         .overlay(AddButtonView()
             .padding(.trailing, 40)
             .offset(x: 0, y: 70),
-             alignment: .topTrailing)
+                 alignment: .topTrailing)
         .ignoresSafeArea()
     }
 }
