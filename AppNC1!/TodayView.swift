@@ -18,7 +18,6 @@ struct TodayView: View {
                     RoundedRectangle(cornerRadius: 20)
                         .frame(width: 350, height: 200)
                         .foregroundColor(.teal)
-                        .shadow(radius: 22)
                     Text ("Your today’s plan is almost done!")
                         .font(.body)
                         .fontWeight(.semibold)
