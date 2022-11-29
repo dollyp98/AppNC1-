@@ -17,9 +17,17 @@ struct AnimationView: View {
     }
     
     var body: some View {
-        SpriteView(scene: self.scene)
-            .frame(width: 800, height: 700)
-            .ignoresSafeArea()
+        ZStack {
+            SpriteView(scene: self.scene)
+                .padding(.bottom, 100.0)
+                .frame(width: 700, height: 900)
+                .ignoresSafeArea()
+            Text ("Well done! \nYou've completed all today's tasks. \nIt's time to start a new day!")
+                .font(.title3)
+                .fontWeight(.semibold)
+                .foregroundColor(Color("AccentColor"))
+                .padding(.top, 300.0)
+        }
     }
 }
 
